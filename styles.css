@@ -1,0 +1,200 @@
+* {
+  /* outline: 1px solid red; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr; /*1/4 sidebar, 3/4 mainbar*/
+  height: 100vh; /*heiht goes to bottom*/
+  margin: 0px;
+}
+
+.sidebar h1 {
+  padding: 10px;
+}
+
+.sidebar {
+  background-color: rgb(0, 170, 255);
+  color: white;
+  font-weight: bold;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+  font-size: larger;
+}
+
+li {
+  padding: 5px;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 5px 0px 10px 0;
+}
+
+.top-header {
+  display: grid;
+  grid-template-columns: 30px 2fr 200px;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-icon {
+  /* padding: 20px; */
+  width: 30px;
+  height: 30px;
+  /* margin-left: 10px; */
+}
+
+.search-bar {
+  border-radius: 10px;
+  border: none;
+  background-color: lightgray;
+  width: 80%;
+  height: 1.5rem;
+  /* margin-left: 10px; */
+}
+
+.user-section {
+  display: grid;
+  grid-template-columns: 40px 40px 50%;
+  gap: 10px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.user-section img {
+  height: 40px;
+  width: auto;
+}
+
+.bottom-header {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.bottom-header img {
+  height: 50px;
+  width: auto;
+}
+
+.button-container {
+  text-align: right;
+}
+
+.button-container button {
+  text-align: centre;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(0, 170, 255);
+  color: white;
+  font-weight: bolder;
+  border: none;
+  width: 7rem;
+  margin: 0 10px 0 10px;
+}
+
+.main-body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 50px 1fr;
+  background-color: rgb(224, 224, 224);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+
+h2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: fit-content;
+}
+
+.feed-container {
+  display: grid;
+  padding: 20px;
+  grid-template-rows: 1fr 70px 1fr;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  border-left: 10px solid orange;
+  padding: 15px;
+}
+
+.card a {
+  text-align: right;
+  align-items: end;
+  justify-content: end;
+  margin-right: auto;
+}
+
+.links {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.feed-card {
+  display: grid;
+  border-left: none;
+}
+
+.announcement-text h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.announcement-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.trending-account {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.trending-account img {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 0px;
+  gap: none;
+  border-radius: 50px;
+}
+
+.trending-account h4 {
+  grid-column-start: 2;
+  padding: 0;
+  margin: 0;
+}
+
+.user-info {
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.user-info p {
+  margin: 0px;
+  padding: 0px;
+}
